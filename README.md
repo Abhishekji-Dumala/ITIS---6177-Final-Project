@@ -21,12 +21,15 @@ Create .env file in this directory.
 ### Installation dependencies:
 
 npm install - nodejs package manager.
+
 node app.js - JavaScript run engine.
 
 ### Applications:
 
 Node js for running the js program.
+
 Terminal for running the code.
+
 Postman for testing purposes.
 
 ### Testing process:
