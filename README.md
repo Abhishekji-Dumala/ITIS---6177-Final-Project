@@ -2,15 +2,7 @@
 
 Microsoft Azure Text to Speech API Documentation
 
-Name: Abhishekji Dumala
-Student ID: 801307903
-Email-ID: Abhishekji Dumala
-
-Introduction:
-
-This is a document which explains the total process of generating the text to speech using Microsoft Azure API key. Deep neural networks are used in this process to generate the texts into the speech format.
-
-Text to Speech Requirements:
+##Text to Speech Requirements:
 
 This is built by using Microsoft Azure Text to Speech API. For this initially we have to create an account in the Azure portal.
 https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/
@@ -18,9 +10,13 @@ https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/
 Setup:
 
 Creating the speech resource in the azure microsoft account for getting the subscription key and endpoint.
-Installation the code through git clone link 
-cd ITIS-6177-Final-Project.
+
+###Installation the code through git clone link 
+
+cd ITIS---6177-Final-Project
+
 Create .env file in this directory and include the following data:
+
 API_AUTH_URL = https://eastus.api.cognitive.microsoft.com/sts/v1.0/issuetoken
 API_URL = https://eastus.tts.speech.microsoft.com/cognitiveservices/v1
 API_KEY = <your-api-key>
@@ -29,19 +25,17 @@ VOICE_URL = https://eastus.tts.speech.microsoft.com/congnitiveservices/voices/li
 VOICE_HOST = eastus.tts.speech.microsoft.com
 
 
-
-
-Installation dependencies:
+###Installation dependencies:
 
 npm install - nodejs package manager.
 node app.js - JavaScript run engine.
 
-Applications:
+###Applications:
 Node js for running the js program.
 Terminal for running the code.
 Postman for testing purposes.
 
-Testing process:
+###Testing process:
 We can test this the postman workspace api by giving this link: http://167.71.14.20:4004/
 
 The main two endpoints for this API are: 
@@ -50,9 +44,12 @@ The main two endpoints for this API are:
 
 
 
-GET Method:  This is the link used for getting the list of voices to be viewed. 
+###GET Method:  This is the link used for getting the list of voices to be viewed. 
  
 http://167.71.14.20:4004/voices
+
+<img width="696" alt="Screen Shot 2022-12-08 at 5 55 32 PM" src="https://user-images.githubusercontent.com/30731706/206827790-bd073fc8-d458-430a-8fe8-a97e4792fd39.png">
+
 
 
 Response:
@@ -61,7 +58,7 @@ Code Description
 400 Bad Request
 500 Internal Server Error
 
-POST Method: This is the link used for posting our request to convert text to speech in json format in Postman application. 
+###POST Method: This is the link used for posting our request to convert text to speech in json format in Postman application. 
 
 http://167.71.14.20:4004/create
 
@@ -81,6 +78,11 @@ Here Default given voices,
 
 Below I am attaching the video of this working model Text to Speech.
  
+
+
+https://user-images.githubusercontent.com/30731706/206827749-1cf895e5-fee8-4d8c-b061-e6e7337f8c28.mov
+
+
 
 
 PITCH:
